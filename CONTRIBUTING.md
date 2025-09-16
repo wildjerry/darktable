@@ -12,17 +12,15 @@ The darktable project welcomes contributions:
 See the [darktable development page](https://www.darktable.org/development/) for
 more information.
 
-## Code
+## Communication
 
 Before you spend a lot of time working on a new feature, it's always best to
-discuss your proposed changes with us first.  The best place to do that is in
-our IRC channel on **ircs://irc.oftc.net:6697**, channel **#darktable** or the
-development mailing list, [see here for more
-information](https://www.darktable.org/contact/).  This will dramatically
+discuss your proposed changes with us first.  The best place to do that is on
+our [the developer matrix channel]([https://webchat.oftc.net/?channels=%23darktable](https://matrix.to/#/#darktable-dev:matrix.org), or create a Github Issue.  This will dramatically
 improve your chances of having your code merged, especially if we think you'll
 hang around to maintain it.
 
-### Coding style
+## Coding style
 
 We like our code to be properly formatted. We have a well-defined coding style, 
 and [.clang-format](.clang-format) style file represents it fully.
