@@ -113,6 +113,13 @@ static void _lib_navigation_control_redraw_callback(gpointer instance,
                     == dt_dev_get_zoom_scale(port, DT_ZOOM_FREE, 1.0, FALSE)
                          ? g_strdup(_("small"))
                          : g_strdup_printf("%.0f%%", cur_scale * 100 * darktable.gui->ppd);
+
+  if(zoomline[strlen(zoomline)-1] == '%')
+  {
+    gchar *z = g_strdup(gettext(zoomline));
+    g_free(zoomline);
+    zoomline = z;
+  }
   ++darktable.gui->reset;
   if(!dt_bauhaus_combobox_set_from_text(d->zoom, zoomline))
   {
